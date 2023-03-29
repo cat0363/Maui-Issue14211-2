@@ -7,8 +7,8 @@ public partial class Page1 : ContentPage
 		InitializeComponent();
 	}
 
-    private void btnNextPage_Clicked(object sender, EventArgs e)
+    private async void btnNextPage_Clicked(object sender, EventArgs e)
     {
-        Shell.Current.Navigation.PushAsync(new Page2(), false);
+        await Shell.Current.Navigation.PushAsync(new Page2(), false);
     }
 }
